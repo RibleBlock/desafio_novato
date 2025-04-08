@@ -84,7 +84,7 @@ int main()
   printf("2 - Populacao: \n");
   printf("3 - Area: \n");
   printf("4 - Numero de pontos turisticos: \n");
-  printf("DIGITE O NUMERO DE PONTOS TURISTICOS: \n");
+  printf("DIGITE A OPCAO DESEJADA: \n");
   scanf("%d", &resultado);
   
   switch (resultado)
