@@ -90,7 +90,7 @@ int main()
 
     // FIGHT //
     int opcao;
-    // char[20] resultado = "EMPATE";
+    char* resultado;
     printf("============FIGHT==============\n");
     printf("DIGITE UMA OPCAO: \n");
     printf("1 - PIB: \n");
@@ -106,64 +106,30 @@ int main()
     switch (opcao)
     {
       case 1:
-        if (pib > pib2) {
-          printf("CARTA 1 VENCEU\n");
-        } else if (pib < pib2) {
-          printf("CARTA 2 VENCEU\n");
-        } else {
-          printf("EMPATE\n");
-        }
+        resultado = (pib > pib2) ? "CARTA 1 VENCEU\n" : (pib < pib2) ? "CARTA 2 VENCEU\n" : "EMPATE\n";
         break;
       case 2:
-        if (populacao > populacao2) {
-          printf("CARTA 1 VENCEU\n");
-        } else if (populacao < populacao2) {
-          printf("CARTA 2 VENCEU\n");
-        } else {
-          printf("EMPATE\n");
-        }
+        resultado = (populacao > populacao2) ? "CARTA 1 VENCEU\n" : (populacao < populacao2) ? "CARTA 2 VENCEU\n" : "EMPATE\n";
         break;
       case 3:
-        if (area > area2) {
-          printf("CARTA 1 VENCEU\n");
-        } else if (area < area2) {
-          printf("CARTA 2 VENCEU\n");
-        } else {
-          printf("EMPATE\n");
-        }
+        resultado = (area > area2) ? "CARTA 1 VENCEU\n" : (area < area2) ? "CARTA 2 VENCEU\n" : "EMPATE\n";
         break;
       case 4:
-        if (turismo > turismo2) {
-          printf("CARTA 1 VENCEU\n");
-        } else if (turismo < turismo2) {
-          printf("CARTA 2 VENCEU\n");
-        } else {
-          printf("EMPATE\n");
-        }
+        resultado = (turismo > turismo2) ? "CARTA 1 VENCEU\n" : (turismo < turismo2) ? "CARTA 2 VENCEU\n" : "EMPATE\n";
         break;
       case 5:
-        if (dencidadePopulacional > dencidadePopulacional2) {
-          printf("CARTA 1 VENCEU\n");
-        } else if (dencidadePopulacional < dencidadePopulacional2) {
-          printf("CARTA 2 VENCEU\n");
-        } else {
-          printf("EMPATE\n");
-        }
+        resultado = (dencidadePopulacional > dencidadePopulacional2) ? "CARTA 1 VENCEU\n" : (dencidadePopulacional < dencidadePopulacional2) ? "CARTA 2 VENCEU\n" : "EMPATE\n";
         break;
       case 6:
-        if (pibPerCaita > pibPerCaita2) {
-          printf("CARTA 1 VENCEU\n");
-        } else if (pibPerCaita < pibPerCaita2) {
-          printf("CARTA 2 VENCEU\n");
-        } else {
-          printf("EMPATE\n");
-        }
+        resultado = (pibPerCaita > pibPerCaita2) ? "CARTA 1 VENCEU\n" : (pibPerCaita < pibPerCaita2) ? "CARTA 2 VENCEU\n" : "EMPATE\n";
         break;
         
       default:
-        printf("ALGO ESTA ERRADO\n");
+        resultado = "OPCAO INVALIDA\n";
         break;
     }
-    //  //
+
+    printf("RESULTADO: %s", resultado);
+    // FIM DO JOGO //
 
 }
